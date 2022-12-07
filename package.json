@@ -13,6 +13,7 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "sass": "^1.56.1"
   }
 }
