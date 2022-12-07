@@ -48,6 +48,14 @@ a {
   font-weight: bold;
 }
 
+.btn {
+  font-size: 1.6rem;
+  border: 1px solid $color_font;
+  padding: 5px 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
 .main_wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -149,7 +157,7 @@ counter-clock {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 25px auto;
+  margin: 15px auto;
   gap: 20px;
 
   .item {
@@ -175,6 +183,7 @@ counter-clock {
 
     &__text {
       width: 100%;
+      max-width: 550px;
 
       .cross {
         height: 120px;
