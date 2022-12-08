@@ -2,11 +2,25 @@
 import "animate.css";
 import "./main.scss";
 
-const body = document.querySelector("body");
+class Loader extends HTMLElement {
+  constructor() {
+    super()
 
-document.addEventListener("DOMContentLoaded", () => {
-  body.classList.add("active");
-});
+    this.main = document.getElementById("main");
+    this.body = document.querySelector('body');
+
+    console.log(this, this.body)
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        this.body.removeChild(this);
+        this.main.classList.add("active");
+      }, 1500);
+    })
+  }
+}
+
+customElements.define("loader-spinner", Loader)
 
 class CounterClock extends HTMLElement {
   constructor() {
@@ -105,3 +119,32 @@ class CounterClock extends HTMLElement {
 }
 
 customElements.define("counter-clock", CounterClock);
+
+class dynamicSrcImage extends HTMLElement {
+  constructor() {
+    super()
+
+    this.srcDesk = this.dataset.srcDesk
+    this.srcMobile = this.dataset.srcMobile
+    this.img = this.querySelector("img");
+
+    console.log({
+      srcDesk: this.srcDesk,
+      srcMobile: this.srcMobile,
+      img: this.img,
+      with: window.screen.width
+    });
+
+    this.setSource();
+  }
+
+  setSource() {
+    if(window.screen.width > 768) {
+      this.img.src = this.srcDesk;
+    } else {
+      this.img.src = this.srcMobile;
+    }
+  }
+}
+
+customElements.define("dynamic-src-image", dynamicSrcImage);
