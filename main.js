@@ -2,14 +2,14 @@
 import "animate.css";
 import "./main.scss";
 
+import imgMobile from "./assets/montse_edit_mobile.png";
+import imgDesk from "./assets/montse_edit_desk.png";
+
 class Loader extends HTMLElement {
   constructor() {
     super()
-
     this.main = document.getElementById("main");
     this.body = document.querySelector('body');
-
-    console.log(this, this.body)
 
     document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
@@ -124,16 +124,9 @@ class dynamicSrcImage extends HTMLElement {
   constructor() {
     super()
 
-    this.srcDesk = this.dataset.srcDesk
-    this.srcMobile = this.dataset.srcMobile
+    this.srcDesk = imgDesk;
+    this.srcMobile = imgMobile;
     this.img = this.querySelector("img");
-
-    console.log({
-      srcDesk: this.srcDesk,
-      srcMobile: this.srcMobile,
-      img: this.img,
-      with: window.screen.width
-    });
 
     this.setSource();
   }
