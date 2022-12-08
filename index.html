@@ -5,17 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="https://jahiker.github.io/bautizo-montse/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Saira+Condensed:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Saira+Condensed:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Bautizo Montserrat</title>
-    <script type="module" crossorigin src="https://jahiker.github.io/bautizo-montse/assets/index.85a2cfad.js"></script>
-    <link rel="stylesheet" href="https://jahiker.github.io/bautizo-montse/assets/index.2c243e77.css">
+    <script type="module" crossorigin src="https://jahiker.github.io/bautizo-montse/assets/index.eb75255e.js"></script>
+    <link rel="stylesheet" href="https://jahiker.github.io/bautizo-montse/assets/index.a19910b7.css">
   </head>
   <body>
-    <div id="main" class="main_wrapper">
-      <div class="image_wrapper">
-        <img src="https://jahiker.github.io/bautizo-montse/assets/montse2.38b4746f.jpg" alt="Montserrat" class="animate__animated animate__fadeInLeft">
+    <loader-spinner>
+      <div class="lds-heart">
+        <div></div>
       </div>
+    </loader-spinner>
+
+    <div id="main" class="main_wrapper" style="display: none;">
+      <dynamic-src-image
+        class="image_wrapper animate__animated animate__fadeInLeft"
+        data-src-desk="./assets/montse_edit_desk.png"
+        data-src-mobile="./assets/montse_edit_mobile.png"
+      >
+        <img alt="Montserrat" />
+      </dynamic-src-image>
       <div class="info_wrapper">
         <div class="info_wrapper__text animate__animated animate__fadeInRight">
           <figure class="cross">
@@ -26,8 +41,13 @@
           <p class="text">PARROQUIA SAN LÁZARO</p>
           <p class="text">EJÉRCITO LIBERTADOR 415 - 10:00AM</p>
 
-          <a href="https://maps.app.goo.gl/YcYATLa3UWuDa1Td9" target="_blank" rel="noopener noreferrer" class="address btn mb">
-            <img src="https://jahiker.github.io/bautizo-montse/assets/location.abf183fe.svg" alt="">
+          <a
+            href="https://maps.app.goo.gl/YcYATLa3UWuDa1Td9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="address btn mb"
+          >
+            <img src="https://jahiker.github.io/bautizo-montse/assets/location.abf183fe.svg" alt="" />
             <span>Como llegar</span>
           </a>
 
@@ -37,13 +57,27 @@
 
           <p class="text">PADRINOS:</p>
           <p class="text">Milagros Medina</p>
-          <p class="text">Andres Ollarves </p>
+          <p class="text">Andres Ollarves</p>
           <p class="text mb">Xioliliana Diaz</p>
-          <p class="text">TAMBIÉN PUEDES CONECTARTE AL LIVE QUE SE TRANSMITIRÁ A TRAVÉS DEL INSTAGRAM </p>
-          <a href="https://www.instagram.com/ayskel23/" target="_blank" rel="noopener noreferrer" class="btn">@AYSKEL23</a>
+          <p class="text">
+            TAMBIÉN PUEDES CONECTARTE AL LIVE QUE SE TRANSMITIRÁ A TRAVÉS DEL
+            INSTAGRAM
+          </p>
+          <a
+            href="https://www.instagram.com/ayskel23/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            >@AYSKEL23</a
+          >
 
           <p class="date">17 DE DICIEMBRE 2022</p>
-          <counter-clock data-start-date="06/12/2022" data-end-date="17/12/2022" data-start-time="00:00:00" data-end-time="10:00:00">
+          <counter-clock
+            data-start-date="06/12/2022"
+            data-end-date="17/12/2022"
+            data-start-time="00:00:00"
+            data-end-time="10:00:00"
+          >
             <div class="days item">
               <p class="value">00</p>
               <label>Dias</label>
