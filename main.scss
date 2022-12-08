@@ -54,6 +54,7 @@ a {
   padding: 5px 15px;
   border-radius: 8px;
   margin-top: 15px;
+  width: max-content;
 }
 
 .main_wrapper {
@@ -187,6 +188,7 @@ a {
       span {
         font-size: 1.6rem;
         text-shadow: $text_shadow;
+        white-space: nowrap;
       }
     }
   }
